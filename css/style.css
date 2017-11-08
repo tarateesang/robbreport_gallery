@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400i|Source+Sans+Pro:400,400i,600');
+:root {
+    --blue700: #1976D2;
+    --blue900: #0D47A1;
+    --grey500: #9E9E9E;
+}
+
+body {
+    padding: 5vw 15vw;
+}
+
+
+
+.img-responsive {
+    width: inherit;
+    height: auto;
+}
+
+.img-container-img {
+    width: 100%;
+    z-index: 0;
+}
+
+.text-container {
+    height: inherit;
+    margin-top: -60px;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+.siema {
+    width: 600px;
+}
+
+
+/* =====================================================
+TYPOGRAPHIC STYLING
+======================================================*/
+
+h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.back-home {
+    margin-bottom: 5vw;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.main-title {
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.descriptor {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: var(--grey500);
+    font-size: 1.25em;
+    margin-top: 10vh;
+}
+
+.description {
+    font-family: "Source Sans Pro";
+    /*margin-top:1vh;*/
+    margin-bottom: 3vh;
+}
+
+a {
+    color: var(--blue700);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--blue900);
+}
+
+ul {
+    margin-top: 3vw;
+}
+
+li {
+    margin-bottom: 1vw;
+}
+
+
+
+/* =====================================================
+IMAGE HOVER EFFECTS
+======================================================*/
+
+.hover-effect, .hover-effect-overlay {
+    width: 600px;
+    overflow: hidden;
+}
+
+.hover-effect img, .hover-effect .overlay {
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+.img-container {
+    /* assuming a fixed width for the container */
+    width: inherit;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hover-effect:hover img {
+    transform: scale(1.02, 1.02);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.overlay {
+    height: 400px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(0%, -100%);
+    -ms-transform: translate(0%, -100%)
+}
+
+.hover-effect:hover .overlay, .hover-effect-overlay:hover .overlay {
+    opacity: 1;
+}
+
+
+/* =====================================================
+LAZY LOADING
+======================================================*/
+
+.lazy-load {
+    /* assuming a fixed width for the container */
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 1vh;
+    margin-right: 1vh;
+    background-color: lightgrey;
+}
+
+.b-lazy {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.b-loaded {
+    opacity: 1;
+    transition: 0.5s ease;
+}
