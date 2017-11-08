@@ -1,4 +1,3 @@
-
 var bLazy = new Blazy({
     offset: -100,
     breakpoints: [{
@@ -15,3 +14,5 @@ var bLazy = new Blazy({
         }, 200);
     }
 });
+
+var scroll = new SmoothScroll('a[href*="#"]');

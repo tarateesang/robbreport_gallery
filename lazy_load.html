@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>
+            Lazy loading + smooth scrolling: Robb Report Animation Gallery
+        </title>
         <link href="css/style.css" rel="stylesheet">
         </link>
     </head>
     <body>
+        <div id="top">
+        </div>
         <h5 class="back-home">
             <a href="index.html">
                 Back to home
             </a>
         </h5>
         <h2 class="title">
-            Lazy Loading
+            Lazy loading + smooth scrolling
         </h2>
         <div class="description" style="width:600px">
-            Lazy Loading is when images don't load all at once, but as you reach breakpoints in the page. This can serve a functional purpose (not overloading bandwidth), as well as enhancing visual flair (more visual interest, less static). This was done with the <a href="http://dinbror.dk/blazy/examples/" target="_blank">B-lazy JavaScript Library</a>.
-            <br/><br/>
+            Lazy Loading is when images don't load all at once, but as you reach breakpoints in the page. This can serve a functional purpose (not overloading bandwidth), as well as enhancing visual flair (more visual interest, less static). This was done with the
+            <a href="http://dinbror.dk/blazy/examples/" target="_blank">
+                B-lazy JavaScript Library
+            </a>
+            .
+            <br/>
+            <br/>
             Scroll down to see how it works.
         </div>
         <!-- mechanics: photos load in a grey container -->
@@ -91,7 +101,21 @@
         <div class="lazy-load">
             <img class="b-lazy" data-src="images/yo.jpg" src="images/yo1.jpg"/>
         </div>
+        <!-- smooth scrolling -->
+        <div style="margin-top:5vh">
+            <div class="description" style="width:600px">
+                <a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">
+                    Smooth scroll
+                </a>
+                is a lightweight JavaScript library to animate smooth scrolling between anchor links (on a page). Click the link below to see what happens.
+            </div>
+            <a data-scroll="" href="#top">
+                Back to top
+            </a>
+        </div>
         <script src="https://rawgithub.com/dinbror/blazy/master/blazy.min.js">
+        </script>
+        <script src="js/smooth-scroll.js">
         </script>
         <script src="js/blazy.js">
         </script>
