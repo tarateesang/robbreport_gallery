@@ -5,7 +5,6 @@
     --blue900: #0D47A1;
     --grey500: #9E9E9E;
     --grey300: #E0E0E0;
-    --amber500:#FFC107;
 }
 
 body {
@@ -40,7 +39,7 @@ body {
 TYPOGRAPHIC STYLING
 ======================================================*/
 
-h1, h2, h3, h4, h5, h6, li, a {
+h1, h2, h3, h4, h5, h6, li, a, button {
     font-family: 'Lato', sans-serif;
 }
 
@@ -97,6 +96,9 @@ li {
     margin-bottom: 1vw;
 }
 
+button {
+    font-family:Lato !important;
+}
 
 
 /* =====================================================
@@ -150,11 +152,30 @@ IMAGE HOVER EFFECTS
 LINK HOVERS
 ======================================================*/
 .link_hover_body {
-    /*background: var(--amber500) !important;*/
     padding:3vh;
     text-align:center;
 }
 
+/* =====================================================
+BUTTON EFFECTS
+======================================================*/
+button {}
+
+.button_effect_body {
+    padding:3vh;
+    text-align:center;
+}
+
+.btn-7.btn-icon-only.single {
+    background:none;
+    background-color:none;
+    border-bottom: 0;
+    box-shadow:none;
+}
+
+.btn-5 {
+    background:#03A9F4 !important;
+}
 
 /* =====================================================
 LAZY LOADING
