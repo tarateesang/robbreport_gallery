@@ -4,6 +4,8 @@
     --blue700: #1976D2;
     --blue900: #0D47A1;
     --grey500: #9E9E9E;
+    --grey300: #E0E0E0;
+    --amber500:#FFC107;
 }
 
 body {
@@ -141,6 +143,16 @@ IMAGE HOVER EFFECTS
 
 .hover-effect:hover .overlay, .hover-effect-overlay:hover .overlay {
     opacity: 1;
+}
+
+
+/* =====================================================
+LINK HOVERS
+======================================================*/
+.link_hover_body {
+    /*background: var(--amber500) !important;*/
+    padding:3vh;
+    text-align:center;
 }
 
 
