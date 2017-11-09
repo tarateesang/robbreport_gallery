@@ -25,29 +25,18 @@
                 See how this text and some photos fade in and out as you scroll up and down the page.
             </div>
         </div>
-        <div class="middle">
-            <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-            <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-            <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
+        <div class="image1">
+            <img src="images/lofoten2.jpg" style="width:600px;"/>
         </div>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
-        <img data-src="images/yo.jpg" src="images/yo1.jpg"/>
+        <div class="image2">
+            <img src="images/lofoten3.jpg" style="width:600px"/>
+        </div>
         <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" src="https://code.jquery.com/jquery-3.2.1.min.js">
         </script>
         <script>
             $(window).scroll(function(){
-                $(".top").css("opacity", 1 - $(window).scrollTop() / 450);
-                $(".middle").css("opacity", 1 - $(window).scrollTop() / 550)
+                $(".top").css("opacity", 1 - $(window).scrollTop() / 375);
+                $(".image1").css("opacity", 1 - $(window).scrollTop() / 850);
               });
         </script>
     </body>
