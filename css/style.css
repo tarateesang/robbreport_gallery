@@ -221,17 +221,19 @@ SLIDE IN UP SCROLL
 
 .slide-in {
     /* sets the time of the slide-up transition*/
-    transition: 0.5s linear;
+    transition: 0.5s ease-in-out;
     width: 800px;
 }
 
 .b-lazy.slide-in {
   /* you can change how far the image should travel here; currently set to 25% height of image*/
   transform: translate3d(0, 25%, 0);
-  visibility: visible;
+  /*visibility: visible;*/
+  opacity:0;
 }
 
 .b-loaded.slide-in {
   transform: translate3d(0, 0, 0);
+  opacity:1;
 }
 
